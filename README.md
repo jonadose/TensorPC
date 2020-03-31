@@ -47,5 +47,37 @@ To do this run the following command in the venv:
         
         pip install tensorflow-object-detection-api
 
+## Experiment 31.03.2020
+- upload a defined set of test images 
 
+### Models 
+- test different models on the same test images
+    - ssd_mobilenet_v1_coco_2018_01_28
+          - original model in code, although it was the 2017 version 
+    - ssd_inception_v2_coco_2018_01_28
+          - 
+    - faster_rcnn_nas_coco_2018_01_28
+          - performance slow, but detection is good. 
+    - faster_rcnn_inception_resnet_v2_atrous_lowproposals_coco_2018_01_28
+          - detected people well and ps4 controller as remote 
+    - faster_rcnn_inception_resnet_v2_atrous_oid_2018_01_28
+          - good detection boxes but no classification at all (N/A) 
+    - faster_rcnn_inception_resnet_v2_atrous_oid_v4_2018_12_12
+          - only one detection box in one image, the rest of the images was completely empty 
+    - faster_rcnn_resnet101_fgvc_2018_07_19
+          - no detection at all 
+### Additional Test Images 
+Because the modelsdetected some categories surprisingly often, we decided to find some test images of those categories that still would make sense in the WeUse context. 
+- TV
+- Remote
+- Scissors
+- Books 
+- Bike 
+- Pot & Pan 
+- Laptop
+- Bikepump
+- Toaster
+- Hairdryer
+
+        
  
