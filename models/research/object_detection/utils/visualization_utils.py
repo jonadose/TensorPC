@@ -816,6 +816,7 @@ def visualize_boxes_and_labels_on_image_array(
             else:
               class_name = 'N/A'
             display_str = str(class_name)
+           
         if not skip_scores:
           if not display_str:
             display_str = '{}%'.format(int(100*scores[i]))
